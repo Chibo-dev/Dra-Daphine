@@ -107,8 +107,8 @@ section[id]{scroll-margin-top:88px}
   padding-block:12px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
 .brand-mark{width:42px;height:42px;border-radius:13px;background:var(--dark);color:var(--green-soft);
-  display:grid;place-items:center;flex-shrink:0}
-.brand-mark .brand-logo{width:30px;height:30px}
+  display:grid;place-items:center;flex-shrink:0;padding:6px}
+.brand-mark .brand-logo{width:100%;height:100%;object-fit:contain}
 .brand-name{display:block;font-family:var(--display);font-size:1.27rem;color:var(--ink);
   line-height:1.15;white-space:nowrap}
 .brand-sub{display:block;font-size:.72rem;color:var(--muted);letter-spacing:.02em;margin-top:1px;
@@ -222,7 +222,7 @@ section[id]{scroll-margin-top:88px}
 
 /* ---------- serviços ---------- */
 .services-grid{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:44px}
-.service{display:flex;flex-direction:column;cursor:default}
+.service{display:flex;flex-direction:column;cursor:default;position:relative}
 .service .body-txt{flex:1}
 .service-foot{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);
   font-size:.86rem;font-weight:600;color:var(--green-deep);
@@ -232,9 +232,9 @@ section[id]{scroll-margin-top:88px}
 .service.featured .body-txt{color:rgba(255,255,255,.82)}
 .service.featured .ic-badge{background:rgba(255,255,255,.13);color:#fff}
 .service.featured .service-foot{border-top-color:rgba(255,255,255,.18);color:var(--accent-lt)}
-.service-pill{align-self:flex-start;font-size:.76rem;font-weight:700;letter-spacing:.07em;
+.service-pill{position:absolute;top:16px;right:16px;font-size:.7rem;font-weight:700;letter-spacing:.07em;
   text-transform:uppercase;background:var(--accent-soft);color:#8F4733;
-  padding:5px 12px;border-radius:999px;margin-bottom:14px}
+  padding:5px 11px;border-radius:999px}
 
 /* ---------- galeria ---------- */
 .gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:44px}
@@ -325,8 +325,8 @@ section[id]{scroll-margin-top:88px}
   font-size:.76rem;color:var(--muted)}
 .footer-signature-label{white-space:nowrap;transition:color .18s ease-out}
 .footer-signature-pills{display:inline-flex;align-items:center;gap:10px}
-.footer-signature-divider{width:1px;height:17px;background-color:var(--line);flex-shrink:0;
-  transition:background-color .18s ease-out}
+.footer-signature-divider{width:2px;height:17px;background-color:var(--line);flex-shrink:0;
+  border-radius:1px;transition:background-color .18s ease-out}
 .footer-signature a{display:inline-flex;align-items:center;gap:6px;
   background:transparent;color:var(--ink);text-decoration:none;white-space:nowrap;
   padding:6px 12px;border-radius:999px;border:1px solid var(--line);
@@ -475,14 +475,13 @@ section[id]{scroll-margin-top:88px}
 <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l8.5 4.7L12 12.4 3.5 7.7z"/><path d="M3.5 12.3 12 17l8.5-4.7M3.5 16.6 12 21.3l8.5-4.7"/></symbol>
 <symbol id="i-elder" viewBox="0 0 24 24"><circle cx="12" cy="5.4" r="2.5"/><path d="M12 8.2v6.4M8.6 21l3.4-6.4 3.4 6.4M8.4 12h7.2"/></symbol>
 <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 2.8v5.4c0 5-3 8.3-7 9.8-4-1.5-7-4.8-7-9.8V5.8z"/><path d="M9 12l2 2 4-4"/></symbol>
-<symbol id="i-monogram" viewBox="-7.50 -29.51 147.03 147.03"><g transform="translate(0.00,100.00) scale(0.070472,-0.070472) translate(-67.0,0)"><path d="M1347 1273Q1477 1188 1557.0 1046.5Q1637 905 1637 700Q1637 520 1565.5 386.5Q1494 253 1376 168Q1256 83 1103.5 41.5Q951 0 784 0H69V78Q101 79 149.0 84.0Q197 89 213 96Q249 111 263.0 136.5Q277 162 277 198V1204Q277 1238 264.0 1265.5Q251 1293 213 1310Q175 1327 132.5 1333.0Q90 1339 67 1341V1419H822Q943 1419 1081.0 1388.0Q1219 1357 1347 1273ZM1143 256Q1192 336 1214.5 446.5Q1237 557 1237 701Q1237 842 1207.0 958.0Q1177 1074 1119 1156Q1061 1238 974.5 1283.0Q888 1328 778 1328Q743 1328 698.5 1326.5Q654 1325 632 1324V247Q632 211 641.5 183.5Q651 156 674 135Q697 114 730.5 102.5Q764 91 818 91Q931 91 1012.0 133.0Q1093 175 1143 256Z" fill="currentColor"/></g><g transform="translate(49.79,100.00) scale(0.080000,-0.080000) translate(-39.0,0)"><path d="M1067 1245Q1067 1206 938 1053H920Q900 1061 895 1112Q884 1215 824.0 1280.5Q764 1346 680 1346Q601 1346 544.0 1288.5Q487 1231 487 1151Q487 1093 523.0 1026.5Q559 960 710.5 816.0Q862 672 905.0 586.5Q948 501 948 424Q948 246 793.5 110.5Q639 -25 432 -25Q261 -25 150.0 54.5Q39 134 39 184Q39 212 100.0 314.0Q161 416 170 416Q202 416 215.5 397.5Q229 379 234 329Q249 173 309.5 114.0Q370 55 467 55Q573 55 652.0 128.5Q731 202 731 299Q731 349 700.5 405.5Q670 462 527.5 597.5Q385 733 341.0 827.0Q297 921 297 1010Q297 1165 414.0 1295.0Q531 1425 725 1425Q872 1425 969.5 1357.5Q1067 1290 1067 1245Z" fill="#1E3A2E" stroke="#1E3A2E" stroke-width="112.5" stroke-linejoin="round"/><path d="M1067 1245Q1067 1206 938 1053H920Q900 1061 895 1112Q884 1215 824.0 1280.5Q764 1346 680 1346Q601 1346 544.0 1288.5Q487 1231 487 1151Q487 1093 523.0 1026.5Q559 960 710.5 816.0Q862 672 905.0 586.5Q948 501 948 424Q948 246 793.5 110.5Q639 -25 432 -25Q261 -25 150.0 54.5Q39 134 39 184Q39 212 100.0 314.0Q161 416 170 416Q202 416 215.5 397.5Q229 379 234 329Q249 173 309.5 114.0Q370 55 467 55Q573 55 652.0 128.5Q731 202 731 299Q731 349 700.5 405.5Q670 462 527.5 597.5Q385 733 341.0 827.0Q297 921 297 1010Q297 1165 414.0 1295.0Q531 1425 725 1425Q872 1425 969.5 1357.5Q1067 1290 1067 1245Z" fill="currentColor"/></g></symbol>
 </defs>
 </svg>
 
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="#topo" aria-label="Espaço Daphine Santana — início">
-      <span class="brand-mark"><svg class="brand-logo" aria-hidden="true"><use href="#i-monogram"/></svg></span>
+      <span class="brand-mark"><img class="brand-logo" src="img/logo-daphine.png" alt="" aria-hidden="true" width="42" height="42"></span>
       <span>
         <span class="brand-name">Daphine Santana</span>
         <span class="brand-sub" aria-hidden="true">Psicomotricista · CREF 154086-G/SP</span>
@@ -723,7 +722,18 @@ section[id]{scroll-margin-top:88px}
         <div class="service-foot"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Crianças e famílias</div>
       </article>
       <article class="card service featured">
-        <span class="service-pill">Diferencial na região</span>
+        <span class="ic-badge"><svg class="icon" aria-hidden="true"><use href="#i-route"/></svg></span>
+        <h3>Avaliação Motora Infantil</h3>
+        <p class="body-txt">Um olhar técnico e sensível sobre os marcos motores, com devolutiva clara para a família.</p>
+        <div class="service-foot"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Com devolutiva à família</div>
+      </article>
+      <article class="card service featured">
+        <span class="ic-badge"><svg class="icon" aria-hidden="true"><use href="#i-activity"/></svg></span>
+        <h3>Treinamento Físico Adaptado</h3>
+        <p class="body-txt">Atividade física individualizada para diferentes idades, necessidades e fases da vida.</p>
+        <div class="service-foot"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Para todas as idades</div>
+      </article>
+      <article class="card service card-hover">
         <span class="ic-badge"><svg class="icon" aria-hidden="true"><use href="#i-wave"/></svg></span>
         <h3>Psicomotricidade Aquática</h3>
         <p class="body-txt">A água potencializa a regulação sensorial, a coordenação e o vínculo. Raro de encontrar por aqui.</p>
@@ -736,22 +746,10 @@ section[id]{scroll-margin-top:88px}
         <div class="service-foot"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Primeiros anos de vida</div>
       </article>
       <article class="card service card-hover">
-        <span class="ic-badge"><svg class="icon" aria-hidden="true"><use href="#i-route"/></svg></span>
-        <h3>Avaliação Motora Infantil</h3>
-        <p class="body-txt">Um olhar técnico e sensível sobre os marcos motores, com devolutiva clara para a família.</p>
-        <div class="service-foot"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Com devolutiva à família</div>
-      </article>
-      <article class="card service card-hover">
         <span class="ic-badge"><svg class="icon" aria-hidden="true"><use href="#i-elder"/></svg></span>
         <h3>Gerontopsicomotricidade</h3>
         <p class="body-txt">Cuidado psicomotor para a pessoa idosa, preservando autonomia, vitalidade e qualidade de vida.</p>
         <div class="service-foot"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Cuidado para a 3ª idade</div>
-      </article>
-      <article class="card service card-hover">
-        <span class="ic-badge"><svg class="icon" aria-hidden="true"><use href="#i-activity"/></svg></span>
-        <h3>Treinamento Físico Adaptado</h3>
-        <p class="body-txt">Atividade física individualizada para diferentes idades, necessidades e fases da vida.</p>
-        <div class="service-foot"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Para todas as idades</div>
       </article>
       <article class="card service card-hover">
         <span class="ic-badge"><svg class="icon" aria-hidden="true"><use href="#i-apple"/></svg></span>
@@ -915,7 +913,7 @@ section[id]{scroll-margin-top:88px}
     <div class="footer-grid">
       <div class="footer-brand">
         <a class="brand" href="#topo" aria-label="Espaço Daphine Santana — voltar ao topo">
-          <span class="brand-mark"><svg class="brand-logo" aria-hidden="true"><use href="#i-monogram"/></svg></span>
+          <span class="brand-mark"><img class="brand-logo" src="img/logo-daphine.png" alt="" aria-hidden="true" width="42" height="42"></span>
           <span><span class="brand-name">Daphine Santana</span></span>
         </a>
         <p>Espaço de psicomotricidade, intervenção precoce e cuidado integral em Mogi das Cruzes, com atendimento domiciliar em todo o Alto Tietê.</p>
