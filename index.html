@@ -74,7 +74,7 @@ section[id]{scroll-margin-top:88px}
 .icon{width:1em;height:1em;flex-shrink:0;fill:none;stroke:currentColor;
   stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 
-/* ---------- eyebrow + headings ---------- */
+/* eyebrow + headings */
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:600;
   letter-spacing:.13em;text-transform:uppercase;color:var(--green-deep)}
 .eyebrow::before{content:"";width:22px;height:2px;background:currentColor;border-radius:2px}
@@ -85,7 +85,7 @@ section[id]{scroll-margin-top:88px}
 .section-head{max-width:680px}
 .section-head .h-lg{margin:16px 0 14px}
 
-/* ---------- buttons ---------- */
+/* buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;
   font-family:var(--sans);font-size:1rem;font-weight:600;line-height:1;
   padding:16px 26px;border-radius:999px;text-decoration:none;cursor:pointer;
@@ -102,7 +102,7 @@ section[id]{scroll-margin-top:88px}
 .btn-sm{font-size:.92rem;padding:12px 20px;min-height:44px}
 .btn-lg{font-size:1.06rem;padding:19px 32px;min-height:58px}
 
-/* ---------- header ---------- */
+/* header */
 .site-header{position:sticky;top:0;z-index:90;
   background:rgba(242,241,237,.88);backdrop-filter:blur(14px) saturate(150%);
   -webkit-backdrop-filter:blur(14px) saturate(150%);border-bottom:1px solid var(--line)}
@@ -122,7 +122,7 @@ section[id]{scroll-margin-top:88px}
 .nav a:hover{background:rgba(119,169,144,.16);color:var(--green-deep)}
 .header-cta{display:flex;align-items:center;gap:14px}
 
-/* ---------- hero ---------- */
+/* hero */
 .hero{padding-top:clamp(20px,3vw,40px);padding-bottom:clamp(24px,3vw,48px);
   display:flex;align-items:center}
 .hero-grid{display:grid;gap:clamp(28px,4vw,52px);align-items:center;width:100%}
@@ -146,7 +146,7 @@ section[id]{scroll-margin-top:88px}
   font-size:.84rem;font-weight:600;color:var(--ink);box-shadow:0 8px 22px -10px rgba(0,0,0,.4)}
 .media-tag .dot{width:8px;height:8px;border-radius:50%;background:var(--green);flex-shrink:0}
 
-/* ---------- generic card grids ---------- */
+/* generic card grids */
 .grid{display:grid;gap:16px}
 .cards-3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .cards-2{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -159,7 +159,7 @@ section[id]{scroll-margin-top:88px}
 .card h3{font-size:1.2rem;margin-bottom:8px;line-height:1.25}
 .card p{font-size:.96rem;color:var(--muted)}
 
-/* ---------- sinais ---------- */
+/* sinais */
 .sinais-grid{margin-top:46px}
 .sinal{display:flex;gap:15px;align-items:flex-start}
 .sinal .ic-badge{margin-bottom:0;flex-shrink:0}
@@ -172,7 +172,7 @@ section[id]{scroll-margin-top:88px}
   font-style:italic;color:var(--ink);line-height:1.4;margin-bottom:10px}
 .callout-q .sub{font-size:.96rem;color:var(--muted)}
 
-/* ---------- split sections ---------- */
+/* split sections */
 .split{display:grid;gap:clamp(34px,5vw,72px);align-items:center}
 .split-media img{width:100%;border-radius:var(--radius-lg);object-fit:cover}
 .media-45{aspect-ratio:4/5}
@@ -184,7 +184,7 @@ section[id]{scroll-margin-top:88px}
 .prose p:first-of-type{margin-top:0}
 .prose p strong{color:var(--ink);font-weight:600}
 
-/* ---------- sobre (dark) ---------- */
+/* sobre (dark) */
 .dark-section{background:var(--dark);color:#fff;position:relative;overflow:hidden}
 .dark-section::before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;
   background:rgba(119,169,144,.28);filter:blur(80px);top:-120px;right:-90px;pointer-events:none}
@@ -204,7 +204,7 @@ section[id]{scroll-margin-top:88px}
 .dark-section .prose p{color:rgba(255,255,255,.84)}
 .dark-section .prose p strong{color:#fff}
 
-/* ---------- diferenciais ---------- */
+/* diferenciais */
 .feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;
   border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;
   background:var(--surface);margin-top:44px}
@@ -213,7 +213,7 @@ section[id]{scroll-margin-top:88px}
 .feature h3{font-size:1.32rem;margin-bottom:9px}
 .feature p{color:var(--muted);font-size:.98rem}
 
-/* ---------- como funciona ---------- */
+/* como funciona */
 .steps{margin-top:46px}
 .step{position:relative}
 .step-n{font-size:.82rem;font-weight:700;letter-spacing:.12em;color:var(--green-deep);
@@ -223,7 +223,7 @@ section[id]{scroll-margin-top:88px}
 .center{text-align:center;margin-inline:auto}
 .mt-cta{margin-top:42px;text-align:center}
 
-/* ---------- serviços ---------- */
+/* serviços */
 .services-grid{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:44px}
 .service{display:flex;flex-direction:column;cursor:default;position:relative}
 .service .body-txt{flex:1}
@@ -239,7 +239,7 @@ section[id]{scroll-margin-top:88px}
   text-transform:uppercase;background:var(--accent-soft);color:#8F4733;
   padding:5px 11px;border-radius:999px}
 
-/* ---------- galeria ---------- */
+/* galeria */
 .gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:44px}
 .gal-item figure{overflow:hidden;border-radius:var(--radius);box-shadow:var(--shadow-sm)}
 .gal-item img{width:100%;aspect-ratio:4/5;object-fit:cover;
@@ -256,7 +256,7 @@ section[id]{scroll-margin-top:88px}
 .insta-card h3{color:#fff;font-size:1.5rem;margin-bottom:8px}
 .insta-card p{color:rgba(255,255,255,.82);font-size:.98rem}
 
-/* ---------- faq ---------- */
+/* faq */
 .faq-list{display:flex;flex-direction:column;gap:12px;margin-top:42px;
   max-width:820px;margin-inline:auto}
 .faq{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
@@ -274,7 +274,7 @@ section[id]{scroll-margin-top:88px}
 .faq-a{padding:0 24px 22px;color:var(--muted);font-size:.99rem;text-wrap:pretty}
 .faq[open] .faq-a{animation:fade .28s ease}
 
-/* ---------- localização ---------- */
+/* localização */
 .loc-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:20px;margin-top:44px}
 .loc-media img{width:100%;height:100%;aspect-ratio:4/5;object-fit:cover;
   border-radius:var(--radius-lg)}
@@ -292,7 +292,7 @@ section[id]{scroll-margin-top:88px}
   font-weight:600;color:var(--green-deep);text-decoration:none;margin-top:4px;padding:11px 2px}
 .loc-link:hover{text-decoration:underline}
 
-/* ---------- cta final ---------- */
+/* cta final */
 .final-cta{background:var(--dark);color:#fff;border-radius:var(--radius-lg);
   overflow:hidden;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:center}
 .final-cta .fc-body{padding:clamp(34px,5vw,64px)}
@@ -303,7 +303,7 @@ section[id]{scroll-margin-top:88px}
 .fc-media{align-self:stretch;min-height:100%}
 .fc-media img{width:100%;height:100%;object-fit:cover;object-position:50% 16%;aspect-ratio:1023/1537}
 
-/* ---------- footer ---------- */
+/* footer */
 .footer{background:var(--cream);border-top:1px solid var(--line);
   padding-top:clamp(48px,6vw,68px);padding-bottom:clamp(78px,7vw,92px)}
 .footer-grid{display:grid;grid-template-columns:minmax(0,1.6fr) repeat(3,minmax(0,1fr));gap:32px}
@@ -323,7 +323,7 @@ section[id]{scroll-margin-top:88px}
   gap:16px 30px;font-size:.83rem;color:var(--muted)}
 .fb-info{display:flex;flex-direction:column;gap:4px}
 
-/* ---------- chibo dev signature ---------- */
+/* chibo dev signature */
 .footer-signature{display:flex;align-items:center;gap:11px;
   font-size:.76rem;color:var(--muted)}
 .footer-signature-label{white-space:nowrap;transition:color .18s ease-out}
@@ -351,7 +351,7 @@ section[id]{scroll-margin-top:88px}
 .chibo-name{font-weight:600;transition:color .18s ease-out}
 .footer-signature .ig-icon{width:15px;height:15px;flex-shrink:0}
 
-/* ---------- floating whatsapp ---------- */
+/* floating whatsapp */
 .fab{position:fixed;right:18px;bottom:18px;z-index:80;display:flex;align-items:center;gap:10px;
   background:#1E7E3E;color:#fff;text-decoration:none;font-weight:600;font-size:.95rem;
   padding:14px 20px;border-radius:999px;box-shadow:0 14px 34px -10px rgba(0,0,0,.5);
@@ -361,7 +361,7 @@ section[id]{scroll-margin-top:88px}
 
 @keyframes fade{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
 
-/* ---------- responsive ---------- */
+/* responsive */
 @media (min-width:881px){
   .hero{min-height:calc(100svh - 70px)}
   .hero-grid{grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr)}
@@ -410,10 +410,25 @@ section[id]{scroll-margin-top:88px}
   .fab{padding:15px;border-radius:50%}
   .brand-name{font-size:1.05rem}
 }
+/* reveal on scroll */
+.reveal{opacity:0;transform:translateY(14px);
+  transition:opacity .55s cubic-bezier(.2,.6,.2,1),transform .55s cubic-bezier(.2,.6,.2,1)}
+.reveal.is-visible{opacity:1;transform:none}
+.reveal-stagger>*{opacity:0;transform:translateY(14px);
+  transition:opacity .55s cubic-bezier(.2,.6,.2,1),transform .55s cubic-bezier(.2,.6,.2,1)}
+.reveal-stagger.is-visible>*{opacity:1;transform:none}
+.reveal-stagger.is-visible>*:nth-child(1){transition-delay:0ms}
+.reveal-stagger.is-visible>*:nth-child(2){transition-delay:60ms}
+.reveal-stagger.is-visible>*:nth-child(3){transition-delay:120ms}
+.reveal-stagger.is-visible>*:nth-child(4){transition-delay:180ms}
+.reveal-stagger.is-visible>*:nth-child(5){transition-delay:240ms}
+.reveal-stagger.is-visible>*:nth-child(6){transition-delay:300ms}
+
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;
     transition-duration:.001ms!important}
+  .reveal,.reveal-stagger>*{opacity:1!important;transform:none!important}
 }
 </style>
 <script type="application/ld+json">
@@ -507,7 +522,6 @@ section[id]{scroll-margin-top:88px}
 
 <main id="conteudo">
 
-<!-- ============ HERO ============ -->
 <section class="hero wrap" id="topo">
   <div class="hero-grid">
     <div>
@@ -538,15 +552,14 @@ section[id]{scroll-margin-top:88px}
   </div>
 </section>
 
-<!-- ============ SINAIS ============ -->
 <section class="section bg-cream" id="sinais">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <p class="eyebrow">Sinais que merecem atenção</p>
       <h2 class="h-lg">Você percebe algum <em>desses sinais</em> no seu filho?</h2>
       <p class="lead">Quanto antes a família busca orientação, mais leve e eficaz é o caminho. Confiar na sua intuição de mãe ou pai já é o primeiro passo.</p>
     </div>
-    <div class="grid cards-3 sinais-grid">
+    <div class="grid cards-3 sinais-grid reveal-stagger">
       <div class="card sinal">
         <span class="ic-badge"><svg class="icon" aria-hidden="true"><use href="#i-activity"/></svg></span>
         <p>Atraso para sentar, engatinhar, andar ou falar</p>
@@ -584,9 +597,8 @@ section[id]{scroll-margin-top:88px}
   </div>
 </section>
 
-<!-- ============ O QUE É PSICOMOTRICIDADE ============ -->
 <section class="section">
-  <div class="wrap split media-right">
+  <div class="wrap split media-right reveal">
     <div class="split-media">
       <img class="media-45" src="img/espaco-terapia-480.webp"
            srcset="img/espaco-terapia-480.webp 480w, img/espaco-terapia-760.webp 760w, img/espaco-terapia-1040.webp 1040w"
@@ -609,9 +621,8 @@ section[id]{scroll-margin-top:88px}
   </div>
 </section>
 
-<!-- ============ SOBRE ============ -->
 <section class="section dark-section" id="sobre">
-  <div class="wrap split">
+  <div class="wrap split reveal">
     <div class="split-media">
       <img class="media-23" src="img/daphine-sobre-440.webp"
            srcset="img/daphine-sobre-440.webp 440w, img/daphine-sobre-760.webp 760w, img/daphine-sobre-1023.webp 1023w"
@@ -640,14 +651,13 @@ section[id]{scroll-margin-top:88px}
   </div>
 </section>
 
-<!-- ============ DIFERENCIAIS ============ -->
 <section class="section">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <p class="eyebrow">Por que o Espaço Daphine</p>
       <h2 class="h-lg">Um cuidado que <em>vai além</em> da técnica.</h2>
     </div>
-    <div class="feature-grid">
+    <div class="feature-grid reveal-stagger">
       <div class="feature">
         <span class="ic-badge"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></span>
         <h3>Plano 100% individual</h3>
@@ -672,15 +682,14 @@ section[id]{scroll-margin-top:88px}
   </div>
 </section>
 
-<!-- ============ COMO FUNCIONA ============ -->
 <section class="section bg-cream" id="como-funciona">
   <div class="wrap">
-    <div class="section-head center">
+    <div class="section-head center reveal">
       <p class="eyebrow">Como começar</p>
       <h2 class="h-lg">Três passos simples para <em>dar o primeiro passo</em>.</h2>
       <p class="lead">Sem burocracia, com cuidado desde a primeira mensagem.</p>
     </div>
-    <div class="grid cards-3 steps">
+    <div class="grid cards-3 steps reveal-stagger">
       <div class="card step">
         <div class="step-n">Passo 01</div>
         <span class="ic-badge"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span>
@@ -708,15 +717,14 @@ section[id]{scroll-margin-top:88px}
   </div>
 </section>
 
-<!-- ============ SERVIÇOS ============ -->
 <section class="section" id="servicos">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <p class="eyebrow">Especialidades</p>
       <h2 class="h-lg">Sete frentes de cuidado, uma <em>mesma escuta</em>.</h2>
       <p class="lead">Cada especialidade recebe a mesma atenção: avaliação cuidadosa, plano individual e a família acompanhando de perto.</p>
     </div>
-    <div class="grid services-grid">
+    <div class="grid services-grid reveal-stagger">
       <article class="card service featured">
         <span class="service-pill">Mais procurado</span>
         <span class="ic-badge"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg></span>
@@ -775,15 +783,14 @@ section[id]{scroll-margin-top:88px}
   </div>
 </section>
 
-<!-- ============ O ESPAÇO ============ -->
 <section class="section bg-cream" id="espaco">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <p class="eyebrow">O espaço</p>
       <h2 class="h-lg">Um ambiente pensado para <em>acolher e estimular</em>.</h2>
       <p class="lead">Da recepção à sala de psicomotricidade, cada detalhe foi preparado para que crianças e famílias se sintam seguras, à vontade e bem cuidadas.</p>
     </div>
-    <div class="gallery">
+    <div class="gallery reveal-stagger">
       <div class="gal-item">
         <figure><img src="img/espaco-recepcao-400.webp" srcset="img/espaco-recepcao-400.webp 400w, img/espaco-recepcao-800.webp 800w" sizes="(max-width:760px) 44vw, 30vw" width="800" height="1000" loading="lazy" decoding="async" alt="Recepção e sala de espera do Espaço Daphine Santana, com poltronas e a identidade visual na parede"></figure>
         <p class="gal-cap">Recepção acolhedora</p>
@@ -821,14 +828,13 @@ section[id]{scroll-margin-top:88px}
   </div>
 </section>
 
-<!-- ============ FAQ ============ -->
 <section class="section" id="faq">
   <div class="wrap">
-    <div class="section-head center">
+    <div class="section-head center reveal">
       <p class="eyebrow">Dúvidas frequentes</p>
       <h2 class="h-lg">Perguntas que as <em>famílias fazem</em>.</h2>
     </div>
-    <div class="faq-list">
+    <div class="faq-list reveal-stagger">
       <details class="faq" name="faq" open>
         <summary>Como funciona a avaliação inicial?<span class="faq-icon"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
         <div class="faq-a">Em um encontro presencial — na clínica em Mogi das Cruzes ou na sua casa, no Alto Tietê — a criança é observada com calma e a família é escutada. Você sai dessa primeira sessão já com uma devolutiva inicial e os próximos passos sugeridos.</div>
@@ -857,15 +863,14 @@ section[id]{scroll-margin-top:88px}
   </div>
 </section>
 
-<!-- ============ LOCALIZAÇÃO ============ -->
 <section class="section bg-cream" id="local">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <p class="eyebrow">Onde atendemos</p>
       <h2 class="h-lg">Na clínica em Mogi — ou na <em>sua casa</em>, no Alto Tietê.</h2>
       <p class="lead">Você escolhe onde é mais confortável para a sua família. O atendimento domiciliar cobre toda a região do Alto Tietê.</p>
     </div>
-    <div class="loc-grid">
+    <div class="loc-grid reveal">
       <div class="loc-media">
         <img src="img/espaco-local-520.webp" srcset="img/espaco-local-520.webp 520w, img/espaco-local-1040.webp 1040w" sizes="(max-width:880px) 92vw, 56vw" width="1040" height="1300" loading="lazy" decoding="async" alt="Recepção da clínica do Espaço Daphine Santana em Mogi das Cruzes">
       </div>
@@ -891,10 +896,9 @@ section[id]{scroll-margin-top:88px}
   </div>
 </section>
 
-<!-- ============ CTA FINAL ============ -->
 <section class="section">
   <div class="wrap">
-    <div class="final-cta">
+    <div class="final-cta reveal">
       <div class="fc-body">
         <span class="ic-badge"><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg></span>
         <h2 class="h-lg">O próximo passo do seu filho pode começar <em>hoje</em>.</h2>
@@ -980,6 +984,29 @@ section[id]{scroll-margin-top:88px}
 <a class="fab" href="https://wa.me/5511954214090?text=Ol%C3%A1%2C%20Daphine!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Falar com a Daphine no WhatsApp">
   <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg><span>Falar no WhatsApp</span>
 </a>
+
+<script>
+(function(){
+  if (!('IntersectionObserver' in window)) {
+    // Fallback: mostra tudo imediatamente em navegadores antigos
+    document.querySelectorAll('.reveal,.reveal-stagger').forEach(function(el){
+      el.classList.add('is-visible');
+    });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal,.reveal-stagger').forEach(function(el){
+    io.observe(el);
+  });
+})();
+</script>
 
 </body>
 </html>
