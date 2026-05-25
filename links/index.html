@@ -11,7 +11,6 @@
 <meta name="color-scheme" content="light">
 <link rel="canonical" href="https://daphinesantana.com.br/links/">
 
-<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Espaço Daphine Santana">
@@ -27,19 +26,16 @@
 <meta name="twitter:title" content="Daphine Santana · Links">
 <meta name="twitter:image" content="https://daphinesantana.com.br/img/og.jpg">
 
-<!-- Favicons (mesmos do site) -->
 <link rel="icon" href="../img/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="64x64" href="../img/favicon-64.png">
 <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
 
-<!-- Preload do retrato (mesma imagem do hero do site) -->
 <link rel="preload" as="image" href="../img/daphine-links-520.webp" fetchpriority="high">
 
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
-/* ── Identidade herdada do site daphinesantana.com.br ─────────────── */
 :root{
   --bg:#E8E9E5; --surface:#FFFFFF; --cream:#F2F1ED;
   --ink:#1E2A22; --body:#3F4B44; --muted:#566159; --line:#DAD9D2;
@@ -67,7 +63,7 @@ body{
     radial-gradient(70% 50% at 0% 100%, rgba(119,169,144,.12) 0%, transparent 60%),
     var(--bg);
 }
-/* malha de pontos finíssima — textura quase imperceptível, dá profundidade sem poluir */
+
 body::before{
   content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
   background-image:radial-gradient(rgba(47,107,79,.06) 1px, transparent 1px);
@@ -79,7 +75,6 @@ img{display:block;max-width:100%;height:auto}
 a{color:inherit;text-decoration:none}
 :focus-visible{outline:3px solid var(--green-deep);outline-offset:3px;border-radius:8px}
 
-/* ondas de movimento — remetem à psicomotricidade; elemento já presente no site da Daphine */
 .bg-waves{position:fixed;pointer-events:none;z-index:0;color:var(--green-deep);width:100vw;left:0;height:min(38vh,340px)}
 .bg-waves-top{top:-10px;opacity:.16}
 .bg-waves-bottom{bottom:-10px;transform:rotate(180deg);opacity:.13}
@@ -89,7 +84,6 @@ a{color:inherit;text-decoration:none}
   display:flex;flex-direction:column;gap:clamp(16px,4.5vw,22px);
 }
 
-/* ── Cartão profissional ──────────────────────────────────────────── */
 .card-pro{
   background:var(--surface);border:1px solid var(--line);
   border-radius:var(--radius-lg);box-shadow:var(--shadow);
@@ -120,7 +114,6 @@ a{color:inherit;text-decoration:none}
 }
 .cref svg{width:14px;height:14px;stroke-width:2}
 
-/* ── Botões (mesma linguagem do site: pílula) ─────────────────────── */
 .links{display:flex;flex-direction:column;gap:13px}
 .btn{
   display:flex;align-items:center;gap:15px;width:100%;
@@ -142,7 +135,7 @@ a{color:inherit;text-decoration:none}
 .btn-soft .ic{color:var(--green-deep)}
 
 footer{margin-top:6px}
-/* ── Assinatura Chibo Dev — tipografia conforme footer novo ───────── */
+
 .footer-signature{display:flex;align-items:center;justify-content:center;gap:10px;
   flex-wrap:wrap;font-family:var(--sans);font-size:10px;letter-spacing:.5px;color:var(--muted)}
 .footer-signature-label{font-weight:400;white-space:nowrap;transition:color .3s ease-out}
@@ -169,10 +162,8 @@ footer{margin-top:6px}
 .chibo-name{font-weight:500;transition:color .3s ease-out}
 .footer-signature .ig-icon{width:14px;height:14px;flex-shrink:0}
 
-/* ── Layout em grid de blocos ─────────────────────────────────────── */
 .links{display:grid;grid-template-columns:1fr 1fr;gap:clamp(11px,3vw,14px)}
 
-/* card-bloco (Site e Maps): vertical, ícone no topo */
 .btn{
   flex-direction:column;align-items:flex-start;gap:10px;
   padding:clamp(16px,4.5vw,20px) clamp(15px,4vw,19px);
@@ -180,7 +171,7 @@ footer{margin-top:6px}
   display:flex;
 }
 .btn .ic{width:clamp(25px,7vw,28px);height:clamp(25px,7vw,28px)}
-/* título do card ocupa 2 linhas fixas → subtítulos alinhados entre os cards */
+
 .btn .txt{text-align:left;font-size:clamp(.9rem,3.4vw,.98rem);font-weight:600;
   line-height:1.25;display:flex;flex-direction:column}
 .btn .txt > span.title-line{min-height:2.5em;display:block}
@@ -189,7 +180,6 @@ footer{margin-top:6px}
 .btn .arr{position:absolute;top:16px;right:16px;opacity:.45;
   width:18px;height:18px;flex-shrink:0;stroke-width:2}
 
-/* WhatsApp ocupa a linha inteira no topo, em formato horizontal */
 .span-2{
   grid-column:1 / -1;flex-direction:row;align-items:center;
   min-height:auto;padding:clamp(16px,4.5vw,20px) clamp(18px,5vw,24px);
@@ -201,7 +191,6 @@ footer{margin-top:6px}
 .span-2 .txt small{margin-top:2px;opacity:.85;font-size:clamp(.8rem,3.2vw,.85rem)}
 .span-2 .arr{position:static;opacity:.55}
 
-/* ── Telas muito estreitas (≤ 340px): empilha tudo em coluna ──────── */
 @media (max-width:340px){
   .links{grid-template-columns:1fr}
   .btn{flex-direction:row;align-items:center;min-height:auto;gap:13px;
@@ -212,7 +201,6 @@ footer{margin-top:6px}
   .span-2{flex-direction:row}
 }
 
-/* ── Ajuste fino para telas grandes (não soltar demais) ───────────── */
 @media (min-width:430px){
   .wrap{max-width:412px}
 }
@@ -224,7 +212,6 @@ footer{margin-top:6px}
 </head>
 <body>
 
-<!-- ondas de movimento (topo e base) -->
 <svg class="bg-waves bg-waves-top" viewBox="0 0 1200 320" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
   <path d="M0 50 C 150 12, 300 88, 450 50 S 750 12, 900 50 S 1200 88, 1200 50" opacity=".95"/>
   <path d="M0 90 C 150 52, 300 128, 450 90 S 750 52, 900 90 S 1200 128, 1200 90" opacity=".75"/>
@@ -244,7 +231,6 @@ footer{margin-top:6px}
 
 <main class="wrap">
 
-  <!-- ════════ CARTÃO PROFISSIONAL ════════ -->
   <section class="card-pro">
     <span class="greeting"><span class="dot"></span><span id="greeting-text">Olá! Que bom ter você aqui</span></span>
     <img class="portrait" src="../img/daphine-links-520.webp" alt="Daphine Santana, psicomotricista" width="104" height="104">
@@ -256,16 +242,8 @@ footer{margin-top:6px}
     </span>
   </section>
 
-  <!-- ════════ LINKS ════════ -->
-  <!--
-    ╔══════════════════════════════════════════════════════════════╗
-    ║  EDITAR LINKS AQUI — basta trocar o href de cada botão.        ║
-    ║  Não precisa mexer em mais nada do arquivo.                    ║
-    ╚══════════════════════════════════════════════════════════════╝
-  -->
   <nav class="links" aria-label="Links principais">
 
-    <!-- WHATSAPP (principal) -->
     <a class="btn btn-primary span-2"
        href="https://wa.me/5511954214090?text=Ol%C3%A1%2C%20Daphine!%20Vim%20pelo%20Instagram%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
        target="_blank" rel="noopener">
@@ -274,19 +252,17 @@ footer{margin-top:6px}
       <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
     </a>
 
-    <!-- SITE COMPLETO -->
     <a class="btn btn-soft" href="https://daphinesantana.com.br/" target="_blank" rel="noopener">
       <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
       <span class="txt"><span class="title-line">Conhecer o trabalho</span><small>Site · abordagem e especialidades</small></span>
       <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
     </a>
 
-    <!-- LOCALIZAÇÃO / MAPS -->
     <a class="btn btn-soft"
        href="https://maps.app.goo.gl/veNc4wi8bnbygGPZA"
        target="_blank" rel="noopener">
       <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-      <span class="txt"><span class="title-line">Como chegar</span><small>Helbor Dual Patteo Mogilar e atendimento em casa</small></span>
+      <span class="txt"><span class="title-line">Como chegar</span><small>Helbor Dual Patteo Mogilar · atendimento Home Care</small></span>
       <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
     </a>
 
@@ -325,7 +301,6 @@ footer{margin-top:6px}
 </main>
 
 <script>
-/* Saudação dinâmica por horário — toque "sob medida", sem prometer disponibilidade */
 (function(){
   var h = new Date().getHours(), t;
   if (h >= 5 && h < 12)       t = "Bom dia! Que bom ter você aqui";
